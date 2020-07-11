@@ -1,4 +1,7 @@
 # Especialización en Sistemas Embebidos
+
+![Build LaTeX document](https://github.com/ronalcelaya/Plantilla-planificacion/workflows/Build%20LaTeX%20document/badge.svg)
+
 ## Planificación del proyecto final en Sistemas Embebidos.
 
 El documento está dividio en 17 secciones. Cada sección específica las consideraciones tomadas para la realización del proyecto.
