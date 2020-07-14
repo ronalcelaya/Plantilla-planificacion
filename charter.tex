@@ -14,11 +14,11 @@
 \autor{Ronal Celaya} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director{Osvaldo Ivani}
+\pertenenciaDirector{SMARTIUM, S. A.} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
-\codirector{} % si queda vacio no se deberíá incluir 
-\pertenenciaCoDirector{}
+\codirector{Jhonattan Camargo} % si queda vacio no se deberíá incluir 
+\pertenenciaCoDirector{SMARTIUM, S. A.}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
 \cliente{Osvaldo Ivani}
@@ -72,7 +72,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 
 
 
-\section{Acta de Constitución del Proyecto}
+\section{Acta de constitución del proyecto}
 \label{sec:acta}
 
 \begin{flushright}
@@ -81,7 +81,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un \textcolor{black}{sistema que realice la actualización remota de firmware (FUOTA, por sus siglas en inglés Firmware Update Over The Air) a través de una red LoRaWAN.}, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un \textcolor{black}{sistema que realice la actualización remota de firmware (FUOTA, por sus siglas en inglés Firmware Update Over The Air) a través de una red LoRaWAN.}, y tendrá un presupuesto preliminar estimado de 602 hs de trabajo, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -101,7 +101,7 @@ Se adjunta a esta acta la planificación inicial.
 
 
 
-\section{Descripción técnica-conceptual del Proyecto a realizar}
+\section{Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
 \begin{consigna}{black}
@@ -152,7 +152,7 @@ Al entrar en el detalle del Transceptor LoRa, en la Figura \ref{fig:diagBloquesN
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.9\textwidth]{./Figuras/diagramaDeBloquesNivel2.png}
+\includegraphics[width=\textwidth]{./Figuras/diagramaDeBloquesNivel2.png}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloquesNivel2}
 \end{figure}
@@ -196,14 +196,14 @@ Usuario final & Personal técnico o capacitado                  &              	
 El proposito del proyecto es lograr un sistema que realice la actualización remota de firmware (FUOTA, por
 sus siglas en inglés Firmware Update Over The Air) a través de una red LoRaWAN. El
 dispositivo debe ser capaz de realizar la actualización a través de una memoria flash
-externa en la que se guardarán las tramas recibidas inalambricamente.
+externa en la que se guardarán las tramas recibidas inalámbricamente.
 \end{consigna}
 
 \section{2. Alcance del proyecto}
 \label{sec:alcance}
 
 \begin{consigna}{black}
-El presente proyecto incluira:
+El presente proyecto incluirá:
 \begin{itemize}
 	\item Diseño de PCB del prototipo.
 	\item Desarrollo de bootloader.
@@ -231,13 +231,13 @@ El presente proyecto no incluirá:
 Para el desarrollo del presente proyecto se supone que se cuenta con lo siguiente:
 
 \begin{itemize}
-\item Kits de desarrollo para LoraWAN.
+\item Kits de desarrollo para LoRaWAN.
 \item Hardware funcional que se usará para pruebas de actualización.
-\item Gateway Lora.
+\item Gateway LoRa.
 \item Servidor donde correrán las aplicaciones.
 \end{itemize}
 
-La empresa también está comprometida a proveer espacios de trabajo si son necesarios.
+La empresa también está comprometida a proveer espacios de trabajo si fueran necesarios.
 \end{consigna}
 
 \section{4. Requerimientos}
@@ -253,7 +253,7 @@ Los requerimientos funcionales y no funcionales del proyecto son los siguientes:
 	\item El sistema debe permitir al usuario leer la versión del firmware en el dispositivo a ser actualizado.
 	\item El sistema debe proveer una manera para asegurar la integridad del firmware.
 	\item El sistema debe proveer al usuario opciones de firmado del firmware.
-	\item El usuario debe estar en la capacidad de seleccionar la cantidad de fragmentos que se usaran en la transmisión del firmware.
+	\item El usuario debe estar en la capacidad de seleccionar la cantidad de fragmentos que se usarán en la transmisión del firmware.
 	\end{enumerate}
 \item Requerimientos no funcionales.
 	\begin{enumerate}
@@ -281,6 +281,13 @@ Los requerimientos funcionales y no funcionales del proyecto son los siguientes:
 
 \end{consigna}
 
+\section{Historias de usuarios (\textit{Product backlog})}
+\label{sec:backlog}
+
+\begin{consigna}{red}
+Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
+\end{consigna}
+
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
 
@@ -306,16 +313,16 @@ Para la realización de este proyecto se consideran las siguientes tareas:
 \begin{enumerate}
 	\item Planificación. \hfill(62 hs)
 	\begin{enumerate}
-		\item Estudio de las especificacione.s \hfill(4 hs)
+		\item Estudio de las especificaciones. \hfill(4 hs)
 		\item Realización del documento de planificación. \hfill(15 hs)
 		\item Revisión de la planificación. \hfill(3 hs)
 		\item Reuniones semanales. \hfill(32 hs)
 		\item Reuniones mensuales. \hfill(8 hs)
 	\end{enumerate}
-	\item Documentación bibliográfica e Investigación. (75 hs)
+	\item Documentación bibliográfica e investigación. (75 hs)
 	\begin{enumerate}
 		\item Estudio del protocolo LoRa y LoRaWAN. \hfill(25 hs)
-		\item Estudio de las especificaiones de FUOTA de la LoRa Alliance\textregistered. \hfill(20 hs)
+		\item Estudio de las especificaciones de FUOTA de la LoRa Alliance\textregistered. \hfill(20 hs)
 		\item Estudio de las soluciones existentes. \hfill(20 hs)
 		\item Estudio de las especificaciones del hardware. \hfill(10 hs)
 	\end{enumerate}
@@ -337,7 +344,7 @@ Para la realización de este proyecto se consideran las siguientes tareas:
     	\item Diseño del PCB. \hfill(30 hs)
     	\item Ensamblaje del prototipo. \hfill(40 hs)
     \end{enumerate}
-	\item Pruebas en Integración. \hfill(40 hs)
+	\item Pruebas de integración. \hfill(40 hs)
 	\begin{enumerate}
 		\item Pruebas de integración y funcionalidad. \hfill(40 hs)
 	\end{enumerate}
