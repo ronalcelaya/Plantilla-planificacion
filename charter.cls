@@ -70,7 +70,9 @@
 \usepackage{tabularx}
 \usepackage{pgfgantt} 
 \usepackage{graphicx}
-
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{longtable}
 
 %\usepackage{tikz}
 %\usetikzlibrary{arrows, arrows.meta, calc, positioning, quotes, shapes}
