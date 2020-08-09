@@ -73,6 +73,7 @@
 \usepackage{pdflscape}
 \usepackage{afterpage}
 \usepackage{longtable}
+\usepackage{xltabular}
 
 %\usepackage{tikz}
 %\usetikzlibrary{arrows, arrows.meta, calc, positioning, quotes, shapes}
